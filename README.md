@@ -11,12 +11,8 @@ Plain HTML5 / CSS3 / vanilla JavaScript. No build step — deploy the folder to 
     python3 -m http.server 8080      # then open http://localhost:8080
 
 ## Things to do before going live
-1. **Set the domain (required for share previews).** `index.html` contains the placeholder
-   `https://YOUR-BRIDE-SIDE-DOMAIN` in og:url, og:image, og:image:secure_url and twitter:image.
-   Replace it with this site's own address (not the groom-side one), e.g.:
-
-       sed -i 's#https://YOUR-BRIDE-SIDE-DOMAIN#https://your-real-domain.com#g' index.html
-
+1. **Share links** — already set to `https://greeshma-yedu.vercel.app/` in `index.html`
+   (og:url, og:image, og:image:secure_url, twitter:image). Change them if the final address differs.
 2. **Photos** — drop files into `assets/images/gallery/` (folder is created automatically when you add it):
    `bride.jpg`, `groom.jpg` (portraits, 3:4) and `photo-01.jpg` … `photo-06.jpg`.
    Until then, labelled placeholders are shown. Bride-first slot labels:
