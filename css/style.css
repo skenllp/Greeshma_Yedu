@@ -1424,7 +1424,8 @@ body.finale-particles .finale-fallback{opacity:0}
   .couple-grid{grid-template-columns:1fr auto 1fr;align-items:center}
   .lux-card{grid-template-columns:1fr auto 1fr}
   .lux-card__rule{width:1px;height:auto;align-self:stretch;background:linear-gradient(180deg,transparent,rgba(231,201,122,.5),transparent)}
-  .photo-wall{columns:3}
+  /* 3 gallery photos: one per column (CSS columns would stack two in the first) */
+  .photo-wall{columns:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;column-gap:clamp(18px,2.8vw,34px)}
 }
 @media (min-width:1200px){
   .photo-wall{column-gap:38px}

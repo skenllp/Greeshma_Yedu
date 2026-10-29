@@ -13,10 +13,10 @@ Plain HTML5 / CSS3 / vanilla JavaScript. No build step — deploy the folder to 
 ## Things to do before going live
 1. **Share links** — already set to `https://greeshma-yedu.vercel.app/` in `index.html`
    (og:url, og:image, og:image:secure_url, twitter:image). Change them if the final address differs.
-2. **Photos** — drop files into `assets/images/gallery/` (folder is created automatically when you add it):
-   `bride.jpg`, `groom.jpg` (portraits, 3:4) and `photo-01.jpg` … `photo-06.jpg`.
-   Until then, labelled placeholders are shown. Bride-first slot labels:
-   01 Greeshma · 02 Yedu · 03 Greeshma & Yedu · 04 Greeshma · 05 Yedu · 06 Greeshma & Yedu.
+2. **Photos** — already in `assets/images/gallery/`: `bride.jpg` and `groom.jpg` (watercolour portraits, 3:4)
+   and `photo-01.jpg` … `photo-03.jpg` (couple photos). The gallery shows these 3. To add more, duplicate a
+   `<figure class="photo-card">` block in `index.html` and add `photo-04.jpg` etc. (on desktop the wall is a
+   3-column grid, so 3 or 6 photos look best).
 3. **Maps buttons** — Google Maps *search* links for the two venue names (unchanged from the
    groom-side site). Swap in the venues' own "Share" links once confirmed.
 4. **Music** — `assets/audio/inkem-inkem_g300U6Yp.mp3` is carried over from the template.
@@ -25,7 +25,7 @@ Plain HTML5 / CSS3 / vanilla JavaScript. No build step — deploy the folder to 
 ## Key files
 | Role | Path |
 |------|------|
-| Opening video (bride-first, 720×1280, 8 s) | `assets/video/invitation-reveal.mp4` |
+| Opening video (bride-first, 720×1280, 8 s, silent — no audio track) | `assets/video/invitation-reveal.mp4` |
 | Share image (1200×630, bride-first) | `assets/images/share/og-thumbnail.jpg` |
 | Cover / hero (no names baked in) | `assets/images/cover/cover.png`, `assets/images/hero/` |
 | Countdown target | `js/main.js` → 2026-12-30 10:30 IST (`+05:30`, correct in any time zone) |
